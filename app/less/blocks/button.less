@@ -1,0 +1,41 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 10px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border: 2px solid @border-color-button;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: @font-color-button;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: @bg-color-button;
+  cursor: pointer;
+
+  &:hover {
+    color: @font-color-button--hover;
+    background-color: @bg-color-button--hover;
+  }
+
+  &:active {
+    color: @font-color-button--active;
+    background-color: @bg-color-button--active;
+  }
+
+  &--green {
+    border-color: @green-primary;
+    color: @white;
+    background-color: @green-primary;
+
+    &:hover,
+    &:active {
+      border-color: @green-primary--hover;
+      background-color: @green-primary--hover;
+    }
+  }
+}
