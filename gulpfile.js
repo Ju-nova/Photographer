@@ -7,8 +7,8 @@ var gulp         = require('gulp'),
     gulpIf       = require('gulp-if'), 
     rename       = require('gulp-rename');
 
-    gulp.task('less', function () {
-   return gulp.src('app/less/**/*.less')
+gulp.task('less', function () {
+   return gulp.src('app/less/main.less')
     .pipe(plumber())
     .pipe(less())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
