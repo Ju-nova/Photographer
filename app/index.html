@@ -11,7 +11,7 @@
 <body class="page">
    
 	<header class="page-header">
-		<nav class="main-nav">
+		<nav class="main-nav  main-nav--closed  main-nav--no-js">
 	 <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo header-logo" aria-label="Voronina">
           <picture>
@@ -20,28 +20,39 @@
             <img class="header-logo__image" src="img/logo-mobile.png" width="112" height="33" alt="Логотип">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--off" id="toggle-button" type="button" aria-label="Меню"></button>
+        <button class="main-nav__toggle" id="toggle-button" type="button" aria-label="Меню"></button>
     </div>
+   
     <ul class="main-nav__list  site-navigation">
-    	<li class="site-navigation__item">Портфолио</li>
-    	<li class="site-navigation__item">Обо мне</li>
-    	<li class="site-navigation__item">Стоимость</li>
-    	<li class="site-navigation__item">Контакты</li>
+    	<li class="site-navigation__item"><a href=#>Портфолио</a></li>
+    	<li class="site-navigation__item"><a href=#>Обо мне</a></li>
+    	<li class="site-navigation__item"><a href=#>Стоимость</a></li>
+    	<li class="site-navigation__item"><a href=#>Контакты</a></li>
     </ul>
+
         </nav>	
 <span class="page-header__number">+7 787 878 55 66</span>
 	</header>
-<div class="mask">
-    <div class="text"><p>Дарья Воронина </p> 
-Regular
-Semi-Bold
-Bold
+<main>
+    <div class="portfolio">
+        
+    </div>
+</main>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
 
-The spectacle before us was indeed sublime.
-Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.
-    </div>     
-<div class="text2"></div>
-</div>
-</div>
+  navMain.classList.remove('main-nav--no-js');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 </body>
 </html>
