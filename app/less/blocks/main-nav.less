@@ -1,4 +1,6 @@
 .main-nav {
+		display:flex;
+	
   box-sizing: border-box;
   margin: 0 auto;
   min-width: 320px;
@@ -9,31 +11,47 @@
 	min-height: 480px;  
 background-color: #f8f8f8;
 }
+
+.main-nav__number{
+	display:none;
+}
 .main-nav__logo-wrapper{
-	z-index:15;
-	position:relative;
+	margin: 0 auto;
+	width:320px;
+	display:flex;
+justify-content: space-between;
 }
-.main-nav__toggle{
-	outline:none;
-position:absolute;
-right: 40px;
-  top: 50%;
-  width: 21px;
-  height: 21px;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
+.main-nav__toggle
+{
+    position: relative;
+
+    width: 21px;
+    height: 21px;
+    
+    margin-right:20px;
+    padding: 0;
+
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    // right: 40px;
+    //   top: 50%;
+
+    align-self: center;
 }
+
 .main-nav--opened .main-nav__toggle{
   &::before,
   &::after {
-    content: "";
-    position: absolute;
- right:-30px;
-  top: 0;
-    width: 20px;
-    height: 2px;
-    background-color: @black;
+    content: '';
+display: block;
+position: absolute;
+top: 10;
+z-index: 50;
+width: 20px;
+height: 2px;
+background-color: @black;
+
   }
 
   &::before {
@@ -51,8 +69,10 @@ right: 40px;
   height: 14px;
   display:block;
   position:absolute;
-  bottom: 14px;
-     left: 50%;
+  // bottom: 20px;
+  //    right: 0;
+  right:10px;
+  top:5px;
   background-image:url(../../img/menu-mobile.png);
   }
   &::after {
@@ -97,4 +117,39 @@ right: 40px;
     display: block;
   }
 
+}
+
+
+@media @tablet {
+	.main-nav--closed .main-nav__toggle {
+	&::before{
+
+  background-image:url(../../img/menu-tablet.png);
+  }  
+}
+.main-nav__number{
+	display:block;
+	margin-left:148px;
+	  align-self: center;
+	  color:#3b3b3b;
+	  font-size: 18px;
+	  font-weight: 600;
+}
+.main-nav {
+		justify-content:flex-start;
+	}
+.main-nav__logo-wrapper{
+	margin: 0;
+	width:auto;
+	justify-content:space-between;
+	
+}
+.main-nav__toggle{
+margin-left:140px;
+margin-right:0;
+}
+.main-nav--opened .main-nav__toggle{
+  
+margin-left:500px;
+}
 }

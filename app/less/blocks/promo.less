@@ -1,24 +1,131 @@
 .promo{
-	width:320px;
-height:480px;
+	
+	background-color:#838689;
+
+
 background-image:url(../img/header-mobile.png);
+background-repeat:no-repeat;
+background-position: center;
 color:@white;
+
+@media @tablet {
+	background-color:#f8f8f8;
+
+
+background-image:url(../img/header-tablet.png);
+background-repeat:no-repeat;
+background-position:top 0px right 0px;
+color:#21201f;
 }
+}
+// .promo__img{
+// 	display:none;
+// 	@media @tablet {
+// 		display:block;
+// 		width:359px;
+// 		height:79px;
+// 		margin-top:-30px ;
+// }
+// }
+// .promo__photo{
+// 	display:none;
+// @media @tablet {
+// display:block;	
+// 	width:359px;
+// 		height:79px;
+// }
+// }
+
 .promo__wrapper{
-margin-top:-37px;
+	box-sizing:border-box;
+	width: 320px;
+  // max-width: 1440px;
+	margin: -37px auto 0;
+
 padding-top:193px;
 padding-left:14px;
 padding-right:77px;
+padding-bottom:148px;
+
+@media @tablet {
+width: 764px;	
+margin: -60px auto 0;
+padding-right:400px;
+padding-left:62px;
+padding-top:340px;
+background-image:url(../../img/Photogrphy-tablet.png);
+background-repeat:no-repeat;
+background-position:20px 332px;
+}
 }
 .promo__title{
 	margin:0;
+	letter-spacing: 1px;
 	font-size: 30px;
 	font-weight: 500;
+	@media @tablet {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	}
 }
 .promo__description{
 	font-size: 14px;
 	opacity: 0.8;
+	margin-bottom:38px;
+	@media @tablet {
+	font-size: 16px;
+	margin-bottom: 42px;
+	}
 }
-.promo__link a{
-	text-transform: uppercase
+.promo__link{
+	@media @tablet {
+		width:131px;
+	height:22px;
+	margin-bottom: 205px;
+}
+}
+.promo-image{
+	@media @tablet {
+	width:131px;
+	height:22px;
+
+}
+}
+
+
+.promo__social{
+	display:none;
+@media @tablet {
+display:flex;
+}
+}
+.promo__social b{
+@media @tablet {
+display:inline-block;
+margin:0 2px;
+color:rgba(33, 32, 33, 0.4);
+}
+}
+.promo__instagram,
+.promo__facebook{
+	@media @tablet {
+		display:inline-block;
+		text-decoration:none;
+		font-size:12px;
+		text-transform: uppercase;
+		color:rgba(33, 32, 33, 0.4);
+		
+}
+}
+.promo__instagram:hover,
+.promo__facebook:hover{
+		color:rgba(33, 32, 33, 0.8);	
+		}
+
+
+.promo__facebook{
+	@media @tablet {
+	display:inline-block;
+}
 }
