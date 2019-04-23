@@ -1,0 +1,103 @@
+.portfolio__wrapper{
+margin: 0 auto;
+width: 320px;
+padding:0 15px;
+box-sizing:border-box;
+border-bottom:1px solid transparent;
+
+@media @tablet {
+	width:764px;
+	padding:0 63px;
+display:flex;
+
+}
+@media @desktop {
+	width:1440px;
+	padding:0 168px;
+display:flex;
+}
+}
+.portfolio__article1{
+	@media @tablet {
+	margin:100px 18px 0 0;
+}
+@media @desktop {
+	margin:175px 32px 0 0;
+}
+}
+
+.portfolio__flex-wrapper{
+	@media @tablet {
+	margin-right:18px;
+}
+
+@media @desktop {
+	margin-right:32px;
+}
+}
+
+.portfolio__article4{
+	@media @tablet {
+	margin-top:115px;
+
+}
+@media @desktop {
+	margin-top:205px;
+}
+}
+
+.portfolio{
+background-color:@white;
+}
+
+
+
+.portfolio__title{
+	position:relative;
+font-size: 18px;
+font-weight: 550;
+color:#212021;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-align:center;
+margin:0;
+padding:135px 0 50px;	
+background-image:url(../../img/work-mobile.png);
+background-repeat:no-repeat;
+background-size:232px 42px;
+background-position:50% 130px;
+@media @tablet {
+padding:255px 0 60px;	
+font-size: 24px;
+font-weight: 550;	
+background-image:url(../../img/work-tablet.png);
+background-size:274px 51px;
+background-position:50% 244px;
+}
+@media @desktop {
+padding:280px 0 90px;	
+font-size: 36px;
+font-weight: 600;	
+background-image:url(../../img/work-desktop.png);
+background-size:416px 76px;
+background-position:50% 262px;
+}
+&::before{
+	content:'';
+	display:block;
+	position:absolute;
+	background-color:rgb(203, 152, 168);
+	height:30px;
+	width: 2px;
+	left:50%;
+	top:80px;
+	@media @tablet {
+		height:40px;
+	top:150px;
+}
+@media @desktop {
+		height:40px;
+	top:140px;
+}
+}
+}

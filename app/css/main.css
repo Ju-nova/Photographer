@@ -50,6 +50,7 @@ input[type="radio"].visually-hidden {
   color: #1d1c1c;
   background-color: #ffffff;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 .page-header {
   background-color: transparent;
@@ -520,5 +521,220 @@ input[type="radio"].visually-hidden {
   .header-logo__image {
     width: 254px;
     height: 76px;
+  }
+}
+.portfolio__wrapper {
+  margin: 0 auto;
+  width: 320px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+}
+@media (min-width: 764px) {
+  .portfolio__wrapper {
+    width: 764px;
+    padding: 0 63px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__wrapper {
+    width: 1440px;
+    padding: 0 168px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 764px) {
+  .portfolio__article1 {
+    margin: 100px 18px 0 0;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__article1 {
+    margin: 175px 32px 0 0;
+  }
+}
+@media (min-width: 764px) {
+  .portfolio__flex-wrapper {
+    margin-right: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__flex-wrapper {
+    margin-right: 32px;
+  }
+}
+@media (min-width: 764px) {
+  .portfolio__article4 {
+    margin-top: 115px;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__article4 {
+    margin-top: 205px;
+  }
+}
+.portfolio {
+  background-color: #ffffff;
+}
+.portfolio__title {
+  position: relative;
+  font-size: 18px;
+  font-weight: 550;
+  color: #212021;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 135px 0 50px;
+  background-image: url(../../img/work-mobile.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 232px 42px;
+          background-size: 232px 42px;
+  background-position: 50% 130px;
+}
+@media (min-width: 764px) {
+  .portfolio__title {
+    padding: 255px 0 60px;
+    font-size: 24px;
+    font-weight: 550;
+    background-image: url(../../img/work-tablet.png);
+    -webkit-background-size: 274px 51px;
+            background-size: 274px 51px;
+    background-position: 50% 244px;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__title {
+    padding: 280px 0 90px;
+    font-size: 36px;
+    font-weight: 600;
+    background-image: url(../../img/work-desktop.png);
+    -webkit-background-size: 416px 76px;
+            background-size: 416px 76px;
+    background-position: 50% 262px;
+  }
+}
+.portfolio__title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #cb98a8;
+  height: 30px;
+  width: 2px;
+  left: 50%;
+  top: 80px;
+}
+@media (min-width: 764px) {
+  .portfolio__title::before {
+    height: 40px;
+    top: 150px;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__title::before {
+    height: 40px;
+    top: 140px;
+  }
+}
+.article {
+  border-bottom: 1px solid transparent;
+}
+.article__image1,
+.article__image2,
+.article__image3,
+.article__image4 {
+  height: 374px;
+  width: 290px;
+}
+@media (min-width: 764px) {
+  .article__image1 {
+    width: 240px;
+    height: 376px;
+  }
+}
+@media (min-width: 1440px) {
+  .article__image1 {
+    width: 414px;
+    height: 648px;
+  }
+}
+@media (min-width: 764px) {
+  .article__image2 {
+    width: 184px;
+    height: 229px;
+  }
+}
+@media (min-width: 1440px) {
+  .article__image2 {
+    width: 317px;
+    height: 396px;
+  }
+}
+@media (min-width: 764px) {
+  .article__image3 {
+    width: 184px;
+    height: 236px;
+  }
+}
+@media (min-width: 1440px) {
+  .article__image3 {
+    width: 317px;
+    height: 408px;
+  }
+}
+@media (min-width: 764px) {
+  .article__image4 {
+    width: 184px;
+    height: 287px;
+  }
+}
+@media (min-width: 1440px) {
+  .article__image4 {
+    width: 315px;
+    height: 495px;
+  }
+}
+.article a {
+  text-decoration: none;
+  display: block;
+}
+.article__tag {
+  font-size: 11px;
+  font-weight: 300;
+  opacity: 0.5;
+  color: #1d1c1c;
+  margin: 6px 0;
+}
+@media (min-width: 764px) {
+  .article__tag {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1440px) {
+  .article__tag {
+    font-size: 14px;
+  }
+}
+.article__title {
+  color: #1d1c1c;
+  font-size: 18px;
+  margin: 0 0 65px 0;
+}
+@media (min-width: 764px) {
+  .article__title {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .article__title {
+    font-size: 18px;
   }
 }
