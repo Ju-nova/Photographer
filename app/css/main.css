@@ -922,7 +922,46 @@ input[type="radio"].visually-hidden {
     -webkit-background-size: 1273px 611px;
             background-size: 1273px 611px;
     background-repeat: no-repeat;
+    background-position: 0 0;
     display: block;
+    position: relative;
+  }
+}
+.info__pagination {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .info__pagination {
+    position: absolute;
+    display: block;
+    left: 19px;
+    top: 140px;
+  }
+  .info__pagination a {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .info__pagination-item {
+    width: 47px;
+    height: 30px;
+  }
+  .info__pagination-item--3 {
+    background-image: url(../../img/pag/03.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 37px 25px;
+            background-size: 37px 25px;
+    background-position: bottom 0 right 0;
+  }
+  .info__pagination-item--1,
+  .info__pagination-item--2,
+  .info__pagination-item--4,
+  .info__pagination-item--5 {
+    background-image: url(../../img/pag/line.png);
+    -webkit-background-size: 11px 1px;
+            background-size: 11px 1px;
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+    opacity: 0.3;
   }
 }
 .info__title {
