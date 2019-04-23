@@ -101,21 +101,34 @@
     }
 }
 
-.promo__link
+.promo__link a
 {
-    @media @tablet
-    {
-        width: 131px;
-        height: 22px;
-        margin-bottom: 205px;
-    }
+    display:block;
+
+}
+.promo__link {
+   @media @tablet{
+    margin-bottom:204px;
+   } 
+    @media @desktop{
+    margin-bottom:220px;
+
+   } 
 }
 .promo-image
 {
+    width: 131px;
+        height: 22px;
     @media @tablet
     {
-        width: 131px;
-        height: 22px;
+        width: 151px;
+        height: 23px;
+    }
+
+      @media @tablet
+    {
+        width: 150px;
+        height: 23px;
     }
 }
 
@@ -125,6 +138,7 @@
     @media @tablet
     {
         display: flex;
+
     }
 }
 .promo__social b
@@ -178,9 +192,10 @@
 		top:280px;
 		width:70px;
 	}
-	.link,.link2{
-		display:block;
-	}
+.promo__pagination a{
+    display:block;
+    margin-bottom:20px;
+}
 	.promo__pagination-item{
 		width: 37px;
 		height:22px;
