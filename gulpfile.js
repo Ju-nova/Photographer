@@ -5,7 +5,8 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     minify       = require('gulp-csso'),
     gulpIf       = require('gulp-if'), 
-    rename       = require('gulp-rename');
+    rename       = require('gulp-rename'),
+    svgSprite    = require('gulp-svg-sprite');
 
 gulp.task('less', function () {
    return gulp.src('app/less/main.less')
@@ -26,6 +27,19 @@ gulp.task('less', function () {
         },
         notify: false // Отключаем уведомления
     });
+});
+
+    gulp.task('svgSprite', function () {
+    return gulp.src('app/img/svg/*.svg') // svg files for sprite
+        .pipe(svgSprite({
+                mode: {
+                    stack: {
+                        sprite: "../sprite.svg"  //sprite file name
+                    }
+                },
+            }
+        ))
+        .pipe(gulp.dest('app/img'));
 });
 
     gulp.task('code', function() {
