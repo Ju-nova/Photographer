@@ -879,6 +879,9 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   margin: 0 0 65px 0;
 }
+.article__title:hover {
+  color: #4e4d4e;
+}
 @media (min-width: 764px) {
   .article__title {
     font-size: 16px;
@@ -1414,5 +1417,62 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1440px) {
   .contacts__number {
     font-size: 18px;
+  }
+}
+.page-footer {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1440px;
+  padding: 20px 70px 86px 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (min-width: 764px) {
+  .page-footer {
+    padding: 30px 284px 86px 284px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-footer {
+    padding: 20px 624px 193px 624px;
+  }
+}
+.page-footer__link {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+@media (min-width: 764px) {
+  .page-footer__link {
+    width: 34px;
+    height: 34px;
+  }
+}
+.page-footer__icon {
+  width: 26px;
+  height: 26px;
+  fill: #4e4d4e;
+}
+.page-footer__icon:hover {
+  fill: #1d1a1a;
+}
+.page-footer__icon:active {
+  fill: #000000;
+}
+@media (min-width: 764px) {
+  .page-footer__icon {
+    width: 34px;
+    height: 34px;
   }
 }

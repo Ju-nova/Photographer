@@ -1,0 +1,42 @@
+.page-footer{
+	margin: 0 auto;
+box-sizing:border-box;
+min-width: 320px;
+max-width:1440px;
+padding:20px 70px 86px 70px;
+display:flex;
+flex-wrap: wrap;
+ justify-content: space-between;
+   @media @tablet{
+ padding:30px 284px 86px 284px;	
+ }
+ @media @desktop {
+ padding:20px 624px 193px 624px;	
+ }
+  
+}
+.page-footer__link{
+	display:inline-block;
+	width: 26px;
+	height:26px;
+	@media @tablet {
+		width: 34px;
+	height:34px;
+	}
+
+}
+.page-footer__icon{
+	width: 26px;
+	height:26px;
+	fill:#4e4d4e;
+	&:hover{
+		fill:#1d1a1a;
+	}
+	&:active{
+		fill:@black;
+	}
+	@media @tablet {
+		width: 34px;
+	height:34px;
+	}
+}
