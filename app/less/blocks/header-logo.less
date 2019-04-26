@@ -2,8 +2,18 @@
   z-index:50;
   display: block;
   width: 112px;
-  height: 33px;
-
+  font-family: 'Playfair Display SC', serif;
+  box-sizing:border-box;
+  text-transform:uppercase;
+  font-size: 10px;
+  text-decoration:none;
+  letter-spacing:2px;
+  color:@white;
+  font-weight: 400px;
+  text-align:center;
+background-color: #3c3b40;
+background-image: linear-gradient(-23deg, #709c54 0%, #8eb574 100%);
+line-height:33px;
   &[href]:hover {
     opacity: 0.6;
   }
@@ -14,12 +24,16 @@
 
   @media @tablet {
     width: 201px;
-    height: 60px;
+    font-size: 16px;
+    line-height:60px;
+
   }
 
   @media @desktop {
     width: 254px;
-    height: 76px;
+   letter-spacing:3px;
+    font-size: 18px;
+    line-height:76px
   }
 }
 .header-logo__image {
