@@ -354,7 +354,7 @@ input[type="radio"].visually-hidden {
     background-position: 131px 284px, top 0 right 0;
     background-repeat: no-repeat no-repeat;
     padding-top: 310px;
-    padding-right: 908px;
+    padding-right: 906px;
     padding-left: 155px;
     padding-bottom: 39px;
   }
@@ -374,14 +374,13 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1440px) {
   .promo__title {
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 33px;
   }
 }
 .promo__description {
   font-size: 14px;
   margin-bottom: 38px;
-  opacity: 0.8;
 }
 @media (min-width: 764px) {
   .promo__description {
@@ -392,7 +391,8 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1440px) {
   .promo__description {
     font-size: 18px;
-    padding-right: 85px;
+    padding-right: 0px;
+    font-weight: 300;
   }
 }
 .promo__link a {
@@ -1008,6 +1008,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   text-align: center;
   font-size: 18px;
+  font-weight: 450;
+  letter-spacing: 1,8;
   margin: 0;
   padding: 140px 0 48px 0;
   background-image: url(../../img/about-mob.png);
@@ -1029,7 +1031,6 @@ input[type="radio"].visually-hidden {
 @media (min-width: 764px) {
   .info__title {
     font-size: 24px;
-    font-weight: 550;
     padding: 150px 0 60px 0;
     background-image: url(../../img/about-tab.png);
     background-repeat: no-repeat;
@@ -1040,8 +1041,8 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1440px) {
   .info__title {
-    font-size: 24px;
-    font-weight: 550;
+    font-size: 36px;
+    font-weight: 450;
     padding: 150px 0 60px 0;
     background-image: url(../../img/about-desk.png);
     background-repeat: no-repeat;
@@ -1180,8 +1181,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 450;
+  letter-spacing: 1,8;
   margin: 0;
   padding: 140px 0 48px 0;
   background-image: url(../../img/price-mob.png);
@@ -1213,7 +1214,6 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1440px) {
   .price__title {
     font-size: 36px;
-    font-weight: 550;
     letter-spacing: 3px;
     padding: 240px 0 197px 0;
     background-image: url(../../img/price-desk.png);
@@ -1225,21 +1225,35 @@ input[type="radio"].visually-hidden {
 @media (min-width: 764px) {
   .price__part1 {
     margin-top: 100px;
+    width: 239px;
   }
 }
 @media (min-width: 1440px) {
   .price__part1 {
     margin-top: 174px;
+    width: 414px;
+  }
+}
+@media (min-width: 764px) {
+  .price__part2 {
+    width: 186px;
+  }
+}
+@media (min-width: 1440px) {
+  .price__part2 {
+    width: 317px;
   }
 }
 @media (min-width: 764px) {
   .price__part3 {
     margin-top: 118px;
+    width: 181px;
   }
 }
 @media (min-width: 1440px) {
   .price__part3 {
     margin-top: 200px;
+    width: 315px;
   }
 }
 .price__part-title {
@@ -1310,9 +1324,11 @@ input[type="radio"].visually-hidden {
 .price__part-description {
   margin: 0;
   margin-bottom: 73px;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   color: #212021;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 @media (min-width: 764px) {
   .price__part-description {
@@ -1324,6 +1340,11 @@ input[type="radio"].visually-hidden {
   .price__part-description {
     font-size: 18px;
   }
+}
+.price__part-description p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 .price__image1,
 .price__image2,
@@ -1396,6 +1417,8 @@ input[type="radio"].visually-hidden {
   font-family: "Source Serif Variable";
   position: relative;
   font-size: 18px;
+  font-weight: 450;
+  letter-spacing: 1,8;
   margin: 0;
   text-align: center;
   padding: 60px 0 40px 0;
