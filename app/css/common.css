@@ -15,3 +15,8 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
 }
 /* stylelint-enable */
+img
+{
+    width: 100%;
+    height:auto;
+  }

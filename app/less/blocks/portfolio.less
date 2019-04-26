@@ -1,20 +1,22 @@
 .portfolio__wrapper{
 	position:relative;
 margin: 0 auto;
-width: 320px;
+min-width: 320px;
 padding:0 15px;
 box-sizing:border-box;
-
+max-width:1440px;
 
 @media @tablet {
-	width:764px;
+	// width:764px;
 	padding:0 63px;
 display:flex;
-
+// align-items: center;
+justify-content:space-between;
+flex-shrink: 0;
 
 }
 @media @desktop {
-	width:1440px;
+	// width:1440px;
 	padding:0 168px;
 
 }
@@ -147,30 +149,39 @@ background-size:1128px 506px;
 }
 .portfolio__article1{
 	@media @tablet {
-	margin:100px 18px 0 0;
+	margin:100px 0px 0 0;
+	width: 240px;
+
 }
 @media @desktop {
-	margin:175px 32px 0 0;
+	margin:175px 0px 0 0;
+	width: 414px;
 }
 }
 
 .portfolio__flex-wrapper{
 	@media @tablet {
-	margin-right:18px;
+	margin-right:0;
+	width: 184px;
 }
 
 @media @desktop {
-	margin-right:32px;
+	
+	margin-right:0;
+	width: 317px;
 }
 }
 
 .portfolio__article4{
 	@media @tablet {
 	margin-top:115px;
+		width: 184px;
 
 }
 @media @desktop {
 	margin-top:205px;
+	width: 315px;
+
 }
 }
 
