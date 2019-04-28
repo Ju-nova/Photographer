@@ -20,7 +20,9 @@ flex-shrink: 0;
 	padding:0 168px;
 
 }
+
 }
+
 .portfolio__pagination{
 	display:none;
 }
@@ -70,7 +72,7 @@ box-sizing:border-box;
 background-image:url(../../img/portf-link-mob.jpg);
 background-repeat:no-repeat;
 background-size:320px 380px;
-
+position:relative;
 @media @tablet {
 	width:764px;
 	padding:0;
@@ -86,14 +88,13 @@ background-repeat:no-repeat;
 background-size:1128px 506px;
 }
 }
-
 .portfolio__link-wrapper{
-	padding:120px 76px 115px 46px;
+	padding:120px 76px 120px 46px;
 	@media @tablet {
-	padding:106px 240px 113px 283px;
+	padding:106px 200px 110px 283px;
 	}
 	@media @desktop {
-	padding:148px 535px 191px 644px;
+	padding:148px 535px 168px 644px;
 	}
 }
 .portfolio__link-title{
@@ -190,6 +191,17 @@ background-size:1128px 506px;
 
 .portfolio{
 background-color:@white;
+position:relative;
+@media @tablet{
+
+background-image:url(../../img/fon1tab.png);
+background-size:764px 1500px;
+@media @desktop
+{
+background-image:url(../../img/fon1desk.png);
+background-size:1440px 2134px;
+}
+}
 }
 
 
@@ -215,6 +227,7 @@ font-weight: 550;
 background-image:url(../../img/work-tablet.png);
 background-size:274px 51px;
 background-position:50% 244px;
+ 
 }
 @media @desktop {
 padding:280px 0 90px;	
@@ -240,6 +253,7 @@ background-position:50% 262px;
 @media @desktop {
 		height:40px;
 	top:140px;
+
 }
 }
 }

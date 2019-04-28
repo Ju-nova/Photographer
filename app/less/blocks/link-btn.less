@@ -32,11 +32,37 @@
    } 
 }
 .link-btn--pdf{
+  position:relative;
      width:150px;  
      @media @tablet{
 
     width:163px;
    } 
+   &::after{
+content:'';
+display:block;
+position:absolute;
+width:24px;
+height:27px;
+background-image:url(../../img/svg/pdf.svg);
+background-size:24px 27px;
+top:0;
+left:155px;
+ @media @tablet{
+  width:32px;
+height:36px;
+background-size:32px 36px;
+top:0px;
+left:175px;
+ }
+ @media @desktop{
+  width:24px;
+height:27px;
+background-size:24px 27px;
+top:0px;
+left:175px;
+ }
+   }
 }
 .link-btn--work{
     color: #212021;

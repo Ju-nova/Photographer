@@ -40,6 +40,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   margin: 0 auto;
   overflow-x: hidden;
+  position: relative;
 }
 .page-header {
   background-color: transparent;
@@ -652,6 +653,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   -webkit-background-size: 320px 380px;
           background-size: 320px 380px;
+  position: relative;
 }
 @media (min-width: 764px) {
   .portfolio__link {
@@ -673,16 +675,16 @@ input[type="radio"].visually-hidden {
   }
 }
 .portfolio__link-wrapper {
-  padding: 120px 76px 115px 46px;
+  padding: 120px 76px 120px 46px;
 }
 @media (min-width: 764px) {
   .portfolio__link-wrapper {
-    padding: 106px 240px 113px 283px;
+    padding: 106px 200px 110px 283px;
   }
 }
 @media (min-width: 1440px) {
   .portfolio__link-wrapper {
-    padding: 148px 535px 191px 644px;
+    padding: 148px 535px 168px 644px;
   }
 }
 .portfolio__link-title {
@@ -784,6 +786,21 @@ input[type="radio"].visually-hidden {
 }
 .portfolio {
   background-color: #ffffff;
+  position: relative;
+}
+@media (min-width: 764px) {
+  .portfolio {
+    background-image: url(../../img/fon1tab.png);
+    -webkit-background-size: 764px 1500px;
+            background-size: 764px 1500px;
+  }
+}
+@media (min-width: 764px) and (min-width: 1440px) {
+  .portfolio {
+    background-image: url(../../img/fon1desk.png);
+    -webkit-background-size: 1440px 2134px;
+            background-size: 1440px 2134px;
+  }
 }
 .portfolio__title {
   position: relative;
@@ -929,6 +946,9 @@ input[type="radio"].visually-hidden {
 .article__title:hover {
   color: #4e4d4e;
 }
+.article__title:active {
+  color: #75a15a;
+}
 @media (min-width: 764px) {
   .article__title {
     font-size: 16px;
@@ -976,6 +996,23 @@ input[type="radio"].visually-hidden {
     background-position: 0 0;
     display: block;
     position: relative;
+  }
+}
+@media (min-width: 764px) {
+  .info {
+    background-image: url(../../img/fon2tab.png);
+    -webkit-background-size: 764px 1120px;
+            background-size: 764px 1120px;
+    background-position: 0 -40px;
+  }
+}
+@media (min-width: 1440px) {
+  .info {
+    background-image: url(../../img/fon2desk.png);
+    -webkit-background-size: 1440px 958px;
+            background-size: 1440px 958px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
   }
 }
 .info__pagination {
@@ -1187,6 +1224,25 @@ input[type="radio"].visually-hidden {
             background-size: 1440px 441px;
     background-position: 0 228px;
   }
+}
+@media (min-width: 764px) {
+  .price {
+    background-image: url(../../img/fon3tab.png);
+    -webkit-background-size: 764px 922px;
+            background-size: 764px 922px;
+    background-position: 0 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .price {
+    background-image: url(../../img/fon3desk.png);
+    -webkit-background-size: 1440px 1539px;
+            background-size: 1440px 1539px;
+    background-position: 0 0px;
+  }
+}
+.price__pagination {
+  display: none;
 }
 @media (min-width: 1440px) {
   .price__pagination {
@@ -1531,6 +1587,22 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
   }
 }
+@media (min-width: 764px) {
+  .contacts {
+    background-image: url(../../img/fon4tab.png);
+    -webkit-background-size: 764px 565px;
+            background-size: 764px 565px;
+    background-position: 0 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts {
+    background-image: url(../../img/fon4desk.png);
+    -webkit-background-size: 1440px 453px;
+            background-size: 1440px 453px;
+    background-position: 0 0px;
+  }
+}
 .page-footer {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -1558,6 +1630,22 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1440px) {
   .page-footer {
     padding: 20px 624px 193px 624px;
+  }
+}
+@media (min-width: 764px) {
+  .page-footer {
+    background-image: url(../../img/fon5tab.png);
+    -webkit-background-size: 764px 121px;
+            background-size: 764px 121px;
+    background-position: 0 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-footer {
+    background-image: url(../../img/fon5desk.png);
+    -webkit-background-size: 1440px 253px;
+            background-size: 1440px 253px;
+    background-position: 0 0px;
   }
 }
 .page-footer__link {
@@ -1621,11 +1709,44 @@ input[type="radio"].visually-hidden {
   }
 }
 .link-btn--pdf {
+  position: relative;
   width: 150px;
 }
 @media (min-width: 764px) {
   .link-btn--pdf {
     width: 163px;
+  }
+}
+.link-btn--pdf::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 27px;
+  background-image: url(../../img/svg/pdf.svg);
+  -webkit-background-size: 24px 27px;
+          background-size: 24px 27px;
+  top: 0;
+  left: 155px;
+}
+@media (min-width: 764px) {
+  .link-btn--pdf::after {
+    width: 32px;
+    height: 36px;
+    -webkit-background-size: 32px 36px;
+            background-size: 32px 36px;
+    top: 0px;
+    left: 175px;
+  }
+}
+@media (min-width: 1440px) {
+  .link-btn--pdf::after {
+    width: 24px;
+    height: 27px;
+    -webkit-background-size: 24px 27px;
+            background-size: 24px 27px;
+    top: 0px;
+    left: 175px;
   }
 }
 .link-btn--work {
