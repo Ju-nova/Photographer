@@ -487,9 +487,13 @@ input[type="radio"].visually-hidden {
     margin-bottom: 5px;
   }
   .promo__pagination-item--1 {
-    background-image: url(../../img/pag/01.png);
-    -webkit-background-size: 37px 22px;
-            background-size: 37px 22px;
+    background-image: url(../../img/pag/long.line.png);
+    -webkit-background-size: 37px 2px;
+            background-size: 37px 2px;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0;
+    text-align: right;
+    font-size: 16px;
   }
   .promo__pagination-item--2,
   .promo__pagination-item--3,
@@ -499,7 +503,7 @@ input[type="radio"].visually-hidden {
     -webkit-background-size: 11px 1px;
             background-size: 11px 1px;
     background-repeat: no-repeat;
-    background-position: bottom 0 left 12px;
+    background-position: bottom 0 left 0;
     opacity: 0.3;
   }
 }
@@ -613,15 +617,18 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
   }
   .portfolio__pagination-item {
-    width: 47px;
-    height: 30px;
+    width: 37px;
+    height: 22px;
+    margin-bottom: 5px;
   }
   .portfolio__pagination-item--2 {
-    background-image: url(../../img/pag/02.png);
+    background-image: url(../../img/pag/long.line.png);
     background-repeat: no-repeat;
-    -webkit-background-size: 37px 25px;
-            background-size: 37px 25px;
-    background-position: bottom 0 right 0;
+    -webkit-background-size: 37px 2px;
+            background-size: 37px 2px;
+    background-position: bottom 0 left 0;
+    text-align: right;
+    font-size: 16px;
   }
   .portfolio__pagination-item--1,
   .portfolio__pagination-item--3,
@@ -631,7 +638,7 @@ input[type="radio"].visually-hidden {
     -webkit-background-size: 11px 1px;
             background-size: 11px 1px;
     background-repeat: no-repeat;
-    background-position: bottom 0 right 0;
+    background-position: bottom 0 left 0;
     opacity: 0.3;
   }
 }
@@ -986,15 +993,18 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
   }
   .info__pagination-item {
-    width: 47px;
-    height: 30px;
+    width: 37px;
+    height: 22px;
+    margin-bottom: 5px;
   }
   .info__pagination-item--3 {
-    background-image: url(../../img/pag/03.svg);
+    background-image: url(../../img/pag/long.line.png);
+    -webkit-background-size: 37px 2px;
+            background-size: 37px 2px;
     background-repeat: no-repeat;
-    -webkit-background-size: 37px 25px;
-            background-size: 37px 25px;
-    background-position: bottom 0 right 0;
+    background-position: bottom 0 left 0;
+    text-align: right;
+    font-size: 16px;
   }
   .info__pagination-item--1,
   .info__pagination-item--2,
@@ -1004,7 +1014,7 @@ input[type="radio"].visually-hidden {
     -webkit-background-size: 11px 1px;
             background-size: 11px 1px;
     background-repeat: no-repeat;
-    background-position: bottom 0 right 0;
+    background-position: bottom 0 left 0;
     opacity: 0.3;
   }
 }
@@ -1176,6 +1186,43 @@ input[type="radio"].visually-hidden {
     -webkit-background-size: 1440px 441px;
             background-size: 1440px 441px;
     background-position: 0 228px;
+  }
+}
+@media (min-width: 1440px) {
+  .price__pagination {
+    position: absolute;
+    display: block;
+    left: 19px;
+    top: 280px;
+  }
+  .price__pagination a {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .price__pagination-item {
+    width: 37px;
+    height: 22px;
+    margin-bottom: 5px;
+  }
+  .price__pagination-item--4 {
+    background-image: url(../../img/pag/long.line.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 37px 2px;
+            background-size: 37px 2px;
+    background-position: bottom 0 left 0;
+    text-align: right;
+    font-size: 16px;
+  }
+  .price__pagination-item--1,
+  .price__pagination-item--2,
+  .price__pagination-item--3,
+  .price__pagination-item--5 {
+    background-image: url(../../img/pag/line.png);
+    -webkit-background-size: 11px 1px;
+            background-size: 11px 1px;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0;
+    opacity: 0.3;
   }
 }
 .price__title {
@@ -1560,6 +1607,10 @@ input[type="radio"].visually-hidden {
 }
 .link-btn:hover {
   opacity: 0.7;
+}
+.link-btn:active {
+  color: #8cb472;
+  opacity: 1;
 }
 .link-btn--promo {
   width: 125px;
