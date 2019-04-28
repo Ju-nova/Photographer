@@ -5,6 +5,13 @@
   font-stretch: normal;
   src: url('../fonts/SourceSerifVariable-Roman.ttf.woff2') format('woff2'), url('../fonts/SourceSerifVariable-Roman.ttf.woff') format('woff'), url('../fonts/SourceSerifVariable-Roman.ttf') format('truetype'), url('../fonts/SourceSerifVariable-Roman.otf.woff2') format('woff2'), url('../fonts/SourceSerifVariable-Roman.otf.woff') format('woff'), url('../fonts/SourceSerifVariable-Roman.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-weight: 200 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('../fonts/MyriadProBold.ttf') format('truetype'), url('../fonts/MyriadProBold.woff') format('woff');
+}
 /* stylelint-disable */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -394,9 +401,6 @@ input[type="radio"].visually-hidden {
     padding-right: 0px;
     font-weight: 300;
   }
-}
-.promo__link a {
-  display: block;
 }
 @media (min-width: 764px) {
   .promo__link {
@@ -1110,21 +1114,18 @@ input[type="radio"].visually-hidden {
 }
 .info__link {
   display: block;
+  margin: auto;
   margin-top: 29px;
+}
+@media (min-width: 764px) {
+  .info__link {
+    margin: 0;
+    margin-top: 29px;
+  }
 }
 @media (min-width: 1440px) {
   .info__link {
     margin-top: 48px;
-  }
-}
-.info__btn {
-  width: 188px;
-  height: 24px;
-}
-@media (min-width: 764px) {
-  .info__btn {
-    width: 218px;
-    height: 25px;
   }
 }
 .price__wrapper {
@@ -1538,5 +1539,50 @@ input[type="radio"].visually-hidden {
   .page-footer__icon {
     width: 34px;
     height: 34px;
+  }
+}
+.link-btn {
+  display: block;
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid;
+}
+@media (min-width: 764px) {
+  .link-btn {
+    color: #212021;
+    font-size: 16px;
+  }
+}
+.link-btn:hover {
+  opacity: 0.7;
+}
+.link-btn--promo {
+  width: 125px;
+}
+@media (min-width: 764px) {
+  .link-btn--promo {
+    width: 138px;
+  }
+}
+.link-btn--pdf {
+  width: 150px;
+}
+@media (min-width: 764px) {
+  .link-btn--pdf {
+    width: 163px;
+  }
+}
+.link-btn--work {
+  color: #212021;
+  width: 186px;
+}
+@media (min-width: 764px) {
+  .link-btn--work {
+    width: 210px;
   }
 }
