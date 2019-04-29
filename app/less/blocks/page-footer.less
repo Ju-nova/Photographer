@@ -1,54 +1,67 @@
-.page-footer{
-	margin: 0 auto;
-box-sizing:border-box;
-min-width: 320px;
-max-width:1440px;
-padding:20px 70px 86px 70px;
-display:flex;
-flex-wrap: wrap;
- justify-content: space-between;
-   @media @tablet{
- padding:30px 284px 86px 284px;	
- }
- @media @desktop {
- padding:20px 624px 193px 624px;	
- }
-  
-}
-.page-footer{
-	@media @tablet{
-	background-image:url(../../img/fon5tab.png);
-	background-size:764px 121px;
-	background-position:0 0px;	
-}
-	@media @desktop{
-	background-image:url(../../img/fon5desk.png);
-	background-size:1440px 253px;
-	background-position:0 0px;	
-}
-}
-.page-footer__link{
-	display:inline-block;
-	width: 26px;
-	height:26px;
-	@media @tablet {
-		width: 34px;
-	height:34px;
-	}
+.page-footer
+{
+    display: flex;
 
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 70px 86px 70px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media @tablet
+    {
+        width: 764px;
+        margin: 0 auto;
+        padding: 30px 284px 86px 284px;
+
+        background-image: url(../img/fon5tab.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 764px 121px;
+    }
+    @media @desktop
+    {
+        width: 1440px;
+        padding: 20px 624px 193px 624px;
+
+        background-image: url(../img/fon5desk.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 1440px 253px;
+    }
 }
-.page-footer__icon{
-	width: 26px;
-	height:26px;
-	fill:#4e4d4e;
-	&:hover{
-		fill:#1d1a1a;
-	}
-	&:active{
-		fill:@black;
-	}
-	@media @tablet {
-		width: 34px;
-	height:34px;
-	}
+
+.page-footer__link
+{
+    display: inline-block;
+
+    width: 26px;
+    height: 26px;
+    @media @tablet
+    {
+        width: 34px;
+        height: 34px;
+    }
+}
+.page-footer__icon
+{
+    width: 26px;
+    height: 26px;
+
+    fill: #4e4d4e;
+    &:hover
+    {
+        fill: #1d1a1a;
+    }
+    &:active
+    {
+        fill: @black;
+    }
+    @media @tablet
+    {
+        width: 34px;
+        height: 34px;
+    }
 }

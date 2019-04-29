@@ -1,90 +1,114 @@
-.article{
 
-}
 .article__image1,
 .article__image2,
 .article__image3,
 .article__image4
 {
-	height:374px;
-	width:290px;
-	}
-.article__image1{
-	@media @tablet{
-	width:240px;
-	height:376px;	
-	}
-	@media @desktop {
-		width:414px;
-	height:648px
-	}	
+    width: 290px;
+    height: 374px;
 }
-.article__image2{
-	@media @tablet{
-	width:184px;
-	height:229px;	
-	}
-	@media @desktop {
-		width:317px;
-	height:396px
-	}	
-}
-.article__image3{
-	@media @tablet{
-	width:184px;
-	height:236px;	
-	}
-	@media @desktop {
-		width:317px;
-	height:408px
-	}	
+.article__image1
+{
+    @media @tablet
+    {
+        width: 240px;
+        height: 376px;
+    }
+    @media @desktop
+    {
+        width: 414px;
+        height: 648px;
+    }
 }
 
-.article__image4{
-	@media @tablet{
-	width:184px;
-	height:287px;	
-	}
-	@media @desktop {
-		width:315px;
-	height:495px;
-	}	
-}
-.article a{
-	text-decoration:none;
-	display:block;
-}
-
-.article__tag{
-	font-size: 11px;
-	font-weight: 300;
-	opacity:0.5;
-	color:#1d1c1c;
-	margin:6px 0;
-	@media @tablet{
-	font-size: 12px;	
-	}
-	@media @desktop {
-	font-size: 14px;
-	}	
-
+.article__image2
+{
+    @media @tablet
+    {
+        width: 184px;
+        height: 229px;
+    }
+    @media @desktop
+    {
+        width: 317px;
+        height: 396px;
+    }
 }
 
-.article__title{
-color:#1d1c1c;	
-font-size: 18px;
-margin:0 0 65px 0;
-&:hover{
-	color:#4e4d4e;
-}
-&:active{
-	color:#75a15a;
-}
-@media @tablet{
-	font-size: 16px;	
-	}
-	@media @desktop {
-	font-size: 18px;
-	}	
+.article__image3
+{
+    @media @tablet
+    {
+        width: 184px;
+        height: 236px;
+    }
+    @media @desktop
+    {
+        width: 317px;
+        height: 408px;
+    }
 }
 
+.article__image4
+{
+    @media @tablet
+    {
+        width: 184px;
+        height: 287px;
+    }
+    @media @desktop
+    {
+        width: 315px;
+        height: 495px;
+    }
+}
+.article a
+{
+    display: block;
+
+    text-decoration: none;
+}
+
+.article__tag
+{
+    font-size: 11px;
+    font-weight: 300;
+
+    margin: 6px 0;
+
+    opacity: .5;
+    color: #1d1c1c;
+    @media @tablet
+    {
+        font-size: 12px;
+    }
+    @media @desktop
+    {
+        font-size: 14px;
+    }
+}
+
+.article__title
+{
+    font-size: 18px;
+
+    margin: 0 0 65px 0;
+
+    color: #1d1c1c;
+    &:hover
+    {
+        color: #4e4d4e;
+    }
+    &:active
+    {
+        color: #75a15a;
+    }
+    @media @tablet
+    {
+        font-size: 16px;
+    }
+    @media @desktop
+    {
+        font-size: 18px;
+    }
+}

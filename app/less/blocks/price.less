@@ -1,265 +1,354 @@
 .price__wrapper
 {
-	position:relative;
-margin: 0 auto;
-width: 320px;
-padding:0 15px;
-box-sizing:border-box;
-  	@media @tablet{
-  		width: 764px;
-	display:flex;
-	align-items:flex-start;
-	padding:0 62px;	
-	justify-content: space-between;
-	background-image:url(../../img/price-fon-tab.png);
-background-repeat:no-repeat;
-background-size:764px 203px;
-background-position:0 116px;
-	}
-	@media @desktop{
-  		width: 1440px;
-	display:flex;
-	padding:0 167px;	
-	justify-content: space-between;
-	background-image:url(../../img/price-fon-desk.png);
-background-repeat:no-repeat;
-background-size:1440px 441px;
-background-position:0 228px;
-	}
+    position: relative;
+
+    box-sizing: border-box;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @media @tablet
+    {
+        display: flex;
+
+        width: 764px;
+        padding: 0 62px;
+
+        background-image: url(../img/price-fon-tab.png);
+        background-repeat: no-repeat;
+        background-position: 0 116px;
+        background-size: 764px 203px;
+
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    @media @desktop
+    {
+        display: flex;
+
+        width: 1440px;
+        padding: 0 167px;
+
+        background-image: url(../img/price-fon-desk.png);
+        background-repeat: no-repeat;
+        background-position: 0 228px;
+        background-size: 1440px 441px;
+
+        justify-content: space-between;
+    }
 }
 
 
-.price{
-@media @tablet{
-	background-image:url(../../img/fon3tab.png);
-	background-size:764px 922px;
-	background-position:0 0px;	
+.price
+{
+    @media @tablet
+    {
+        width: 764px;
+        margin: 0 auto;
+
+        background-image: url(../img/fon3tab.png);
+        background-position: 0 0;
+        background-size: 764px 922px;
+    }
+    @media @desktop
+    {
+        width: 1440px;
+
+        background-image: url(../img/fon3desk.png);
+        background-position: 0 0;
+        background-size: 1440px 1539px;
+    }
 }
-@media @desktop{
-	background-image:url(../../img/fon3desk.png);
-	background-size:1440px 1539px;
-	background-position:0 0px;	
+.price__pagination
+{
+    display: none;
 }
-}
-.price__pagination{
-	display:none;
-}
-@media @desktop{
-.price__pagination{	
-	position:absolute;
-		display:block;
-		left:19px;
-		top:280px;
-		// width:70px;
-	}
-.price__pagination a{
-	display:block;
-	margin-bottom:20px;
-}
-	.price__pagination-item{
-		width: 37px;
-		height:22px;
-		margin-bottom:5px;
-		
-	}
-	.price__pagination-item--4	{
-		background-image:url(../../img/pag/long.line.png);
-		background-repeat:no-repeat;
-		background-size:37px 2px;
-		background-position:bottom 0 left 0;
-		text-align:right;
-         font-size: 16px;
-	}
-	.price__pagination-item--1,
-	.price__pagination-item--2,
-	.price__pagination-item--3,
-	.price__pagination-item--5{
-	background-image:url(../../img/pag/line.png);
-		background-size:11px 1px;
-		background-repeat:no-repeat;
-		background-position:bottom 0 left 0;
-		opacity:0.3;
-	}
+@media @desktop
+{
+    .price__pagination
+    {
+        position: absolute;
+        top: 280px;
+        left: 19px;
+
+        display: block;
+        // width:70px;
+    }
+    .price__pagination a
+    {
+        display: block;
+
+        margin-bottom: 20px;
+    }
+    .price__pagination-item
+    {
+        width: 37px;
+        height: 22px;
+        margin-bottom: 5px;
+    }
+    .price__pagination-item--4
+    {
+        font-size: 16px;
+
+        text-align: right;
+
+        background-image: url(../img/pag/long.line.png);
+        background-repeat: no-repeat;
+        background-position: bottom 0 left 0;
+        background-size: 37px 2px;
+    }
+    .price__pagination-item--1,
+    .price__pagination-item--2,
+    .price__pagination-item--3,
+    .price__pagination-item--5
+    {
+        opacity: .3;
+        background-image: url(../img/pag/line.png);
+        background-repeat: no-repeat;
+        background-position: bottom 0 left 0;
+        background-size: 11px 1px;
+    }
 }
 
 
-.price__title{
-	position:relative;
-	text-align:center;
-	font-size: 18px;
-font-weight: 450;
-	letter-spacing:1,8;
-	margin:0;
-	padding:140px 0 48px 0;
-	background-image:url(../../img/price-mob.png);
-background-repeat:no-repeat;
-background-size:237px 42px;
-background-position:50% 130px;
-&::before{
-	content:'';
-	display:block;
-	position:absolute;
-	background-color:rgb(203, 152, 168);
-	height:30px;
-	width: 2px;
-	left:50%;
-	top:80px;
-	}
-	@media @tablet{
-     	font-size: 24px;
-     	padding:240px 0 110px 0;
-     	background-image:url(../../img/price-tab.png);
-background-size:278px 50px;
-background-position:50% 236px;
-}
-@media @desktop{
-     	font-size: 36px;	
-     	
-     	letter-spacing:3px;
-     	padding:240px 0 197px 0;
-     	background-image:url(../../img/price-desk.png);
-background-size:431px 76px;
-background-position:50% 225px;
-}
-}
-
-.price__part1{
-	@media @tablet{
-	margin-top:100px;
-	width: 239px;
-}
-@media @desktop{
-	margin-top:174px;
-		width: 414px;
-}
-}
-.price__part2{
-	@media @tablet{
-	
-	width: 186px;
-}
-@media @desktop{
-	
-	width:317px;
-}
-	}
-.price__part3{
-	@media @tablet{
-	margin-top:118px;
-		width: 181px;
-}@media @desktop{
-	margin-top:200px;
-	width: 315px;
-}
-}
-.price__part-title{
-	font-size: 18px;
-	color:#8eb574;
-	margin:0;
-	padding:16px 0 0 40px;
-	 	@media @tablet{
-    font-size: 16px;
-    padding:10px 0 0 20px;
-}
-@media @desktop{
-    font-size: 24px;
-    padding:35px 0 0 80px;
-}
-}
-.price__part-cost{
-	font-size: 18px;
-	color:#8eb574;
-	margin:0;
-	padding-left:135px;
-	margin-bottom:10px;
-	@media @tablet{
+.price__title
+{
     font-size: 18px;
-}
-@media @desktop{
-    margin-bottom:20px;
-}
-}
-.price__part1 .price__part-cost{
-	@media @tablet{
-    padding-left:90px;
-}
-@media @desktop{
-    padding-left:185px;
-}
+    font-weight: 450;
+
+    position: relative;
+
+    margin: 0;
+    padding: 140px 0 48px 0;
+
+    text-align: center;
+    letter-spacing: 1,8;
+
+    background-image: url(../img/price-mob.png);
+    background-repeat: no-repeat;
+    background-position: 50% 130px;
+    background-size: 237px 42px;
+    &::before
+    {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+
+        display: block;
+
+        width: 2px;
+        height: 30px;
+
+        content: '';
+
+        background-color: rgb(203, 152, 168);
+    }
+    @media @tablet
+    {
+        font-size: 24px;
+
+        padding: 240px 0 110px 0;
+
+        background-image: url(../img/price-tab.png);
+        background-position: 50% 236px;
+        background-size: 278px 50px;
+    }
+    @media @desktop
+    {
+        font-size: 36px;
+
+        padding: 240px 0 197px 0;
+
+        letter-spacing: 3px;
+
+        background-image: url(../img/price-desk.png);
+        background-position: 50% 225px;
+        background-size: 431px 76px;
+    }
 }
 
-.price__part2 .price__part-cost{
-	@media @tablet{
-    padding-left:45px;
+.price__part1
+{
+    @media @tablet
+    {
+        width: 239px;
+        margin-top: 100px;
+    }
+    @media @desktop
+    {
+        width: 414px;
+        margin-top: 174px;
+    }
 }
-@media @desktop{
-    padding-left:120px;
+.price__part2
+{
+    @media @tablet
+    {
+        width: 186px;
+    }
+    @media @desktop
+    {
+        width: 317px;
+    }
 }
+.price__part3
+{
+    @media @tablet
+    {
+        width: 181px;
+        margin-top: 118px;
+    }@media @desktop
+    {
+        width: 315px;
+        margin-top: 200px;
+    }
 }
-.price__part3 .price__part-cost{
-	@media @tablet{
-    padding-left:50px;
-}
-@media @desktop{
-    padding-left:120px;
-}
-}
-.price__part-description{
-	margin:0;
-	margin-bottom:73px;
-	font-size:13px;
-	text-align:center;
-	color:#212021;
-	font-weight: 400;
-	letter-spacing:0;
-	@media @tablet{
-    font-size:13px;
-    margin-bottom:0;
-}
-@media @desktop{
+.price__part-title
+{
     font-size: 18px;
-  
+
+    margin: 0;
+    padding: 16px 0 0 40px;
+
+    color: #8eb574;
+    @media @tablet
+    {
+        font-size: 16px;
+
+        padding: 10px 0 0 20px;
+    }
+    @media @desktop
+    {
+        font-size: 24px;
+
+        padding: 35px 0 0 80px;
+    }
 }
+.price__part-cost
+{
+    font-size: 18px;
+
+    margin: 0;
+    margin-bottom: 10px;
+    padding-left: 135px;
+
+    color: #8eb574;
+    @media @tablet
+    {
+        font-size: 18px;
+    }
+    @media @desktop
+    {
+        margin-bottom: 20px;
+    }
 }
-.price__part-description p{
-	text-align:center;
-	padding:0;
-	margin:0;
+.price__part1 .price__part-cost
+{
+    @media @tablet
+    {
+        padding-left: 90px;
+    }
+    @media @desktop
+    {
+        padding-left: 185px;
+    }
+}
+
+.price__part2 .price__part-cost
+{
+    @media @tablet
+    {
+        padding-left: 45px;
+    }
+    @media @desktop
+    {
+        padding-left: 120px;
+    }
+}
+.price__part3 .price__part-cost
+{
+    @media @tablet
+    {
+        padding-left: 50px;
+    }
+    @media @desktop
+    {
+        padding-left: 120px;
+    }
+}
+.price__part-description
+{
+    font-size: 13px;
+    font-weight: 400;
+
+    margin: 0;
+    margin-bottom: 73px;
+
+    text-align: center;
+    letter-spacing: 0;
+
+    color: #212021;
+    @media @tablet
+    {
+        font-size: 13px;
+
+        margin-bottom: 0;
+    }
+    @media @desktop
+    {
+        font-size: 18px;
+    }
+}
+.price__part-description p
+{
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
 }
 
 .price__image1,
 .price__image2,
-.price__image3{
-	width: 290px;
-    height:381px;
+.price__image3
+{
+    width: 290px;
+    height: 381px;
 }
-.price__image1{
-	@media @tablet{
-	width: 239px;
-    height:381px;	
-	}
-	@media @desktop{
-	width: 414px;
-    height:649px;	
-	}
+.price__image1
+{
+    @media @tablet
+    {
+        width: 239px;
+        height: 381px;
+    }
+    @media @desktop
+    {
+        width: 414px;
+        height: 649px;
+    }
 }
-.price__image2{
-	@media @tablet{
-	width: 186px;
-    height:234px;	
-	}
-	@media @desktop{
-	width: 317px;
-    height:397px;	
-	}
+.price__image2
+{
+    @media @tablet
+    {
+        width: 186px;
+        height: 234px;
+    }
+    @media @desktop
+    {
+        width: 317px;
+        height: 397px;
+    }
 }
-.price__image3{
-	@media @tablet{
-	width: 181px;
-    height:291px;	
-	}
-	@media @desktop{
-	width: 315px;
-    height:496px;	
-	}
+.price__image3
+{
+    @media @tablet
+    {
+        width: 181px;
+        height: 291px;
+    }
+    @media @desktop
+    {
+        width: 315px;
+        height: 496px;
+    }
 }

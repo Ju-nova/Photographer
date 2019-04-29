@@ -1,75 +1,97 @@
 .link-btn
 {
-    display:block;
-    font-family:"Myriad Pro Regular", "Arial", sans-serif;
-    text-transform:uppercase;
+    font-family: 'Myriad Pro Regular', 'Arial', sans-serif;
     font-size: 14px;
-    
-    text-decoration:none;
-    color:@white;
-    letter-spacing:2px;
-    padding-bottom:5px;
-    border-bottom:2px solid;
-    @media @tablet{
+
+    display: block;
+
+    padding-bottom: 5px;
+
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: @white;
+    border-bottom: 2px solid;
+    @media @tablet
+    {
+        font-size: 16px;
+
+        color: #212021;
+    }
+    &:hover
+    {
+        opacity: .7;
+    }
+    &:active
+    {
+        opacity: 1;
+        color: #8cb472;
+    }
+}
+
+.link-btn--promo
+{
+    width: 125px;
+    @media @tablet
+    {
+        width: 138px;
+    }
+}
+.link-btn--pdf
+{
+    position: relative;
+
+    width: 150px;
+    @media @tablet
+    {
+        width: 163px;
+    }
+    &::after
+    {
+        position: absolute;
+        top: 0;
+        left: 155px;
+
+        display: block;
+
+        width: 24px;
+        height: 27px;
+
+        content: '';
+
+        background-image: url(../img/svg/pdf.svg);
+        background-size: 24px 27px;
+        @media @tablet
+        {
+            top: 0;
+            left: 175px;
+
+            width: 32px;
+            height: 36px;
+
+            background-size: 32px 36px;
+        }
+        @media @desktop
+        {
+            top: 0;
+            left: 175px;
+
+            width: 24px;
+            height: 27px;
+
+            background-size: 24px 27px;
+        }
+    }
+}
+.link-btn--work
+{
+    width: 186px;
+
     color: #212021;
-    font-size: 16px;
 
-   } 
-   &:hover{
-    opacity:0.7;
-   }
- &:active{
- color:#8cb472;
-  opacity:1;
-}
-}
-
-.link-btn--promo{
-     width:125px;
-     @media @tablet{
-
-    width:138px;
-   } 
-}
-.link-btn--pdf{
-  position:relative;
-     width:150px;  
-     @media @tablet{
-
-    width:163px;
-   } 
-   &::after{
-content:'';
-display:block;
-position:absolute;
-width:24px;
-height:27px;
-background-image:url(../../img/svg/pdf.svg);
-background-size:24px 27px;
-top:0;
-left:155px;
- @media @tablet{
-  width:32px;
-height:36px;
-background-size:32px 36px;
-top:0px;
-left:175px;
- }
- @media @desktop{
-  width:24px;
-height:27px;
-background-size:24px 27px;
-top:0px;
-left:175px;
- }
-   }
-}
-.link-btn--work{
-    color: #212021;
-     width:186px;  
-
-     @media @tablet{
-
-    width:210px;
-   } 
+    @media @tablet
+    {
+        width: 210px;
+    }
 }

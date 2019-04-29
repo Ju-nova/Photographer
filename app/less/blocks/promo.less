@@ -39,7 +39,7 @@
     padding-bottom: 80px;
 
       
-        background-image: url(../../img/Photogrphy-tablet.png), url(../img/header-tablet.png) ;
+        background-image: url(../img/Photogrphy-tablet.png), url(../img/header-tablet.png) ;
         background-repeat: no-repeat no-repeat;
         background-position: 20px 332px, top 0 right 0;
     }
@@ -47,7 +47,7 @@
 	position:relative;
 	margin: -76px auto 0;
 	width: 1440px;
-	background-image:url(../../img/Photogrphy.png), url(../img/header-desktop.png);
+	background-image:url(../img/Photogrphy.png), url(../img/header-desktop.png);
 	 background-position: 131px 284px, top 0 right 0;
 	 background-repeat: no-repeat no-repeat;
 	  padding-top: 310px;
@@ -73,7 +73,7 @@
 
         margin-bottom: 40px;
     }
-     @media @desktop
+    @media @desktop
     {
         font-size: 48px;
         font-weight: 400;
@@ -88,44 +88,47 @@
 
     margin-bottom: 38px;
 
-  
+
     @media @tablet
     {
         font-size: 16px;
 
         margin-bottom: 42px;
     }
-     @media @desktop
+    @media @desktop
     {
         font-size: 18px;
-        padding-right:0px;
-        font-weight:300;
+        font-weight: 300;
+
+        padding-right: 0;
     }
 }
 
 
 
 
-.promo__link {
-   @media @tablet{
-    margin-bottom:204px;
-   } 
-    @media @desktop{
-    margin-bottom:220px;
-
-   } 
+.promo__link
+{
+    @media @tablet
+    {
+        margin-bottom: 204px;
+    }
+    @media @desktop
+    {
+        margin-bottom: 220px;
+    }
 }
 .promo-image
 {
     width: 131px;
-        height: 22px;
+    height: 22px;
     @media @tablet
     {
         width: 151px;
         height: 23px;
     }
 
-      @media @tablet
+    @media @tablet
     {
         width: 150px;
         height: 23px;
@@ -138,9 +141,9 @@
     @media @tablet
     {
         display: flex;
-
     }
 }
+
 .promo__social b
 {
     @media @tablet
@@ -167,9 +170,9 @@
 
         color: rgba(33, 32, 33, .4);
     }
-    @media @desktop{
-    	font-size: 14px;
-
+    @media @desktop
+    {
+        font-size: 14px;
     }
 }
 
@@ -178,60 +181,60 @@
 {
     color: rgba(33, 32, 33, .8);
 }
-.promo__pagination{
-	display:none;
+.promo__pagination
+{
+    display: none;
+}
+
+
+@media @desktop
+{
+    .promo__pagination
+    {
+        position: absolute;
+        top: 280px;
+        left: 19px;
+
+        display: block;
+
+        width: 70px;
+    }
+    .promo__pagination a
+    {
+        display: block;
+
+        margin-bottom: 20px;
+    }
+    .promo__pagination-item
+    {
+        width: 37px;
+        height: 22px;
+        margin-bottom: 5px;
+    }
+    .promo__pagination-item--1
+    {
+        font-size: 16px;
+
+        text-align: right;
+
+        background-image: url(../img/pag/long.line.png);
+        background-repeat: no-repeat;
+        background-position: bottom 0 left 0;
+        background-size: 37px 2px;
+    }
+
+
+    .promo__pagination-item--2,
+    .promo__pagination-item--3,
+    .promo__pagination-item--4,
+    .promo__pagination-item--5
+    {
+        opacity: .3;
+        background-image: url(../img/pag/line.png);
+        background-repeat: no-repeat;
+        background-position: bottom 0 left 0;
+        background-size: 11px 1px;
+    }
+}
+
 	
-}
-
-
-@media @desktop{
-.promo__pagination{	
-	position:absolute;
-		display:block;
-		left:19px;
-		top:280px;
-		width:70px;
-	}
-.promo__pagination a{
-    display:block;
-    margin-bottom:20px;
-}
-	.promo__pagination-item{
-		width: 37px;
-		height:22px;
-		margin-bottom:5px;
-	}
-	 .promo__pagination-item--1	{
-		background-image:url(../../img/pag/long.line.png);
-	 	background-size:37px 2px;
-        background-repeat:no-repeat;
-background-position:bottom 0 left 0;
-text-align:right;
-font-size: 16px;
-	 }
-
-    
-	.promo__pagination-item--2,
-	.promo__pagination-item--3,
-	.promo__pagination-item--4,
-	.promo__pagination-item--5{
-	background-image:url(../../img/pag/line.png);
-		background-size:11px 1px;
-		background-repeat:no-repeat;
-		background-position:bottom 0 left 0;
-		opacity:0.3;
-	}
-
-	// .link:hover .promo__pagination-item--1{
-	// background-image:url(../../img/pag/02.png);	
-	// // background-position:50% 50%;
-
-	// }
-
-	// .link2:hover .promo__pagination-item--2{
-	// background-image:url(../../img/pag/02.png);	
-	// background-size:37px 22px;
-	// // background-position:50% 50%;
-
-	// }
-}
