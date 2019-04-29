@@ -577,9 +577,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-width: 320px;
-  max-width: 1440px;
   margin: 0 auto;
+  width: 320px;
   padding: 0 15px;
 }
 @media (min-width: 764px) {
@@ -588,6 +587,7 @@ input[type="radio"].visually-hidden {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    width: 764px;
     padding: 0 63px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -600,6 +600,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1440px) {
   .portfolio__wrapper {
+    width: 1440px;
     padding: 0 168px;
   }
 }
@@ -786,12 +787,13 @@ input[type="radio"].visually-hidden {
 }
 .portfolio {
   position: relative;
+  width: 320px;
   background-color: #ffffff;
+  margin: 0 auto;
 }
 @media (min-width: 764px) {
   .portfolio {
     width: 764px;
-    margin: 0 auto;
     background-image: url(../img/fon1tab.png);
     background-repeat: no-repeat;
     -webkit-background-size: 764px 1500px;

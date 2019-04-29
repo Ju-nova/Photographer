@@ -3,15 +3,16 @@
     position: relative;
 
     box-sizing: border-box;
-    min-width: 320px;
-    max-width: 1440px;
+    
+    
     margin: 0 auto;
+    width:320px;
     padding: 0 15px;
 
     @media @tablet
     {
         display: flex;
-
+width: 764px;
         padding: 0 63px;
 
         justify-content: space-between;
@@ -19,6 +20,7 @@
     }
     @media @desktop
     {
+        width: 1440px;
         padding: 0 168px;
     }
 }
@@ -232,12 +234,13 @@
 .portfolio
 {
     position: relative;
-
+   width: 320px;
     background-color: @white;
+    margin: 0 auto;
     @media @tablet
     {
         width: 764px;
-        margin: 0 auto;
+        
 
         background-image: url(../img/fon1tab.png);
         background-repeat: no-repeat;
