@@ -2,16 +2,16 @@
 {
     color: @white;
     background-color: #838689;
-   
+   height:480px;
 
     @media @tablet
     {
         color: #21201f;
         background-color: #f8f8f8;
-       
+       height:820px;
     }
     @media @desktop{
-    	 
+    	 height:780px; 
     }
 }
 
@@ -27,6 +27,7 @@
     padding-left: 14px;
  background-image: url(../img/header-mobile.png);
     background-repeat: no-repeat;
+    background-size:320px 480px;
     background-position: center;
     @media @tablet
     {
@@ -41,6 +42,7 @@
       
         background-image: url(../img/Photogrphy-tablet.png), url(../img/header-tablet.png) ;
         background-repeat: no-repeat no-repeat;
+         background-size:359px 79px,378px 820px;
         background-position: 20px 332px, top 0 right 0;
     }
 @media @desktop{
@@ -49,6 +51,7 @@
 	width: 1440px;
 	background-image:url(../img/Photogrphy.png), url(../img/header-desktop.png);
 	 background-position: 131px 284px, top 0 right 0;
+     background-size:494px 107px,780px 780px;
 	 background-repeat: no-repeat no-repeat;
 	  padding-top: 310px;
         padding-right: 906px;
@@ -109,6 +112,8 @@
 
 .promo__link
 {
+    display: flex;
+     
     @media @tablet
     {
         margin-bottom: 204px;
